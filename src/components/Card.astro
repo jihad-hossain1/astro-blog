@@ -1,0 +1,18 @@
+---
+export interface Props {
+  title: string;
+  body: string;
+  dark?: boolean;
+}
+
+const { title, body, dark = false } = Astro.props as Props;
+---
+
+<div class="p-3 bg-zinc-700 shadow-md rounded-lg">
+  <h4>
+    {title}
+  </h4>
+  <p class="break-all">
+    {body}
+  </p>
+</div>

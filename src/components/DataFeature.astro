@@ -1,0 +1,30 @@
+---
+import Card from "./Card.astro";
+const featureData =  [
+{
+    title: 'hello world',
+    body: 'lorem text are help to build for free demo text .'
+},
+{
+    title: 'hello world 2',
+    body: 'lorem text are help to build for free demo text .'
+},
+{
+    title: 'hello world 3',
+    body: 'lorem text are help to build for free demo text .'
+},
+{
+    title: 'hello world 4',
+    body: 'lorem text are help to build for free demo text .'
+},
+];
+---
+
+
+<section class="my-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+     {featureData?.map((item,index)=>(
+            <Card title={item?.title} body={item?.body}  />
+        ))}
+</div>
+</section>

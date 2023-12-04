@@ -1,0 +1,37 @@
+---
+import Banner from '../components/Banner.astro';
+import Layout from '../layouts/Layout.astro';
+import DataFeature from '../components/DataFeature.astro';
+import Tabs from '../components/Tabs.astro';
+---
+
+<Layout>
+	
+	<Banner showExtra={true} />
+  <DataFeature />
+<section class="page-content">
+      <div class="container">
+        <div class="flex flex-col gap-3 text-center mb-6">
+          <h2 class="text-2xl font-bold">Get Started With Astro</h2>
+        <p>
+          Get a new Astro project up and running locally with our helpful
+          create-astro CLI wizard!
+        </p>
+        </div>
+        <!-- Tabs -->
+        <Tabs activeTextColor='#A741FF' headings={['npm','pnpm','yarn']} contents={['$ npm create astro@latest','$ pnpm create astro@latest','$ yarn create astro@latest']} />
+
+       <div class="mt-5">
+         <h3>Start Building</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
+          deserunt inventore ut voluptate, officia maiores repellat tenetur
+          praesentium omnis est ex tempora a necessitatibus reiciendis at et
+          dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
+          laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
+          iusto error molestias dolorum, necessitatibus labore?
+        </p>
+       </div>
+      </div>
+    </section>
+</Layout>
