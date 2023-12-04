@@ -1,4 +1,5 @@
-# Astro Starter Kit: Basics
+# Astro Blog
+- [Live-Link](https://zingy-sherbet-d2bb43.netlify.app)
 
 ```sh
 npm create astro@latest -- --template basics
